@@ -110,6 +110,12 @@ body {
     border-radius : 10px;
     z-index : 44;
     position : relative;
+    transition : all .4s ease-in;
+    transform-style : preserve-3d;
+    cursor : pointer;
+}
+.countdown-font.active {
+    transform : rotateY(360deg);
 }
 .countdown-font::after {
     position : absolute;
